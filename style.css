@@ -1,0 +1,1059 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-1: #035a89;
+  --color-2: #880000;
+  --color-3: #faf1d8;
+  --color-4: #3ef97c;
+  --color-5: #b48a32;
+  --color-6: #ead5a0;
+  --text: #faf5e9;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.mainDiv {
+  background: linear-gradient(
+    150deg,
+    var(--color-4),
+    var(--color-3),
+    var(--color-6)
+  );
+  min-height: 100vh;
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  color: var(--text);
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vh;
+}
+
+header {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  height: 25vh;
+  justify-content: space-between;
+  background-color: black;
+  background-image: url("images-20241130T222905Z-001/images/10711070.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position-x: 93%;
+  background-position-y: 2%;
+  background-size: 40%;
+  background-origin: padding-box;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+
+.todo-image {
+  display: flex;
+  min-width: 20vw;
+  margin-top: 6vh;
+  margin-left: 3.8vw;
+  border-radius: 4vw;
+}
+
+.logo-img {
+  height: 15vh;
+  min-width: 8vw;
+  margin-top: -2vh;
+}
+
+h1 {
+  color: white;
+  text-align: left;
+  font-size: 4vh;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  font-weight: 400;
+}
+
+.formDiv {
+  width: 90vw;
+  height: 10.9vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+form input {
+  border-radius: 4vw;
+}
+
+.todo-input {
+  height: 5vh;
+  width: 72vw;
+  color: black;
+  background-color: #55555531;
+  font-size: 2.4vh;
+  padding-left: 2vw;
+  box-shadow: 1px 2px 5px black;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2vh;
+  border: none;
+  outline: none;
+}
+
+form button {
+  height: 6vh;
+  width: 16vw;
+  margin-left: -16.9vw;
+  color: var(--white);
+  font-weight: 500;
+  background: #a70202;
+  cursor: pointer;
+  border-radius: 4vw;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: var(--color-4);
+  color: black;
+}
+
+.num-items {
+  color: black;
+  text-align: left;
+  margin-left: 7vw;
+  font-size: 3vh;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.todo-container {
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  min-width: 30vw;
+  min-height: 40vh;
+  margin-top: 4vh;
+  padding: 2vw;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background-color: white;
+  height: 6vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  border-radius: 4vw;
+  box-shadow: 1px 2px 5px black;
+}
+
+.todo-item {
+  flex: 1;
+  padding: 0rem 0.5rem;
+  color: black;
+  font-size: 2.2vh;
+  padding-left: 1.4vw;
+  line-height: 2vh;
+}
+
+.complete-btn,
+.trash-btn {
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.complete-btn {
+  background: lightgrey;
+  height: 5vh;
+  width: 5vw;
+  border-top-left-radius: 4vw;
+  border-bottom-left-radius: 4vw;
+  margin-left: 0.6vw;
+}
+
+.complete-btn:hover {
+  background: var(--color-4);
+  height: 5.2vh;
+  width: 6.3vw;
+  box-shadow: 1px 2px 5px black;
+}
+
+.trash-btn {
+  height: 5vh;
+  width: 5vw;
+  border-top-right-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+  background: gray;
+  margin-right: 0.5vw;
+}
+
+.trash-btn:hover {
+  height: 5.2vh;
+  width: 6.3vw;
+  background: #a70202;
+  box-shadow: 1px 2px 5px black;
+}
+
+.addTxt {
+  font-size: 2.2vh;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: inline;
+}
+
+.addTxt:hover {
+  color: black;
+  display: inline;
+}
+
+.todo-button {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-rectangle-xmark,
+.fa-check,
+.fa-plus {
+  pointer-events: none;
+  size: 2.2vh;
+  margin-right: 0vw;
+  margin-top: 0.5vh;
+}
+
+.fall {
+  opacity: 0; /* coz we want it to disappear */
+  animation: fall-animation 1s ease-in-out;
+}
+
+@keyframes fall-animation {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5; /* coz we still want to be able to see what has been done incase of a restore */
+}
+
+select {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 12.6vw;
+  height: 6vh;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  font-size: 2.2vh;
+  border-radius: 4vw;
+  padding-left: 2vw;
+  background-color: black;
+  border: none;
+  margin-right: 1vw;
+}
+
+select:hover {
+  background-color: white;
+  color: black;
+}
+
+select option {
+  font-weight: 500;
+  border-radius: none;
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+}
+
+/* this is the div */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  font-weight: 300;
+}
+
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 1.6vw;
+  padding-top: 1.2vh;
+  color: var(--color-2);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  :root {
+    --color-1: #035a89;
+    --color-2: #880000;
+    --color-3: #faf1d8;
+    --color-4: #3ef97c;
+    --color-5: #b48a32;
+    --color-6: #ead5a0;
+    --text: #faf5e9;
+    --white: #fff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+  }
+
+  .mainDiv {
+    background: linear-gradient(
+      150deg,
+      var(--color-4),
+      var(--color-3),
+      var(--color-6)
+    );
+    min-height: 100vh;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    color: var(--text);
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vh;
+  }
+
+  header {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    height: 25vh;
+    justify-content: space-between;
+    background-color: black;
+    background-image: url("images-20241130T222905Z-001/images/10711070.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 2%;
+    background-size: 40%;
+    background-origin: padding-box;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+
+  .todo-image {
+    display: flex;
+    min-width: 20vw;
+    margin-top: 6vh;
+    margin-left: 3.8vw;
+    border-radius: 4vw;
+  }
+
+  .logo-img {
+    height: 15vh;
+    min-width: 8vw;
+    margin-top: -2vh;
+  }
+
+  h1 {
+    color: white;
+    text-align: left;
+    font-size: 4vh;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    font-weight: 400;
+  }
+
+  .formDiv {
+    width: 90vw;
+    height: 10.9vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  form input {
+    border-radius: 4vw;
+  }
+
+  .todo-input {
+    height: 5vh;
+    width: 72vw;
+    color: black;
+    background-color: #55555531;
+    font-size: 2.4vh;
+    padding-left: 2vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+  }
+
+  form button {
+    height: 6vh;
+    width: 16vw;
+    margin-left: -16.9vw;
+    color: var(--white);
+    font-weight: 500;
+    background: #a70202;
+    cursor: pointer;
+    border-radius: 4vw;
+    transition: all 0.3s ease-in-out;
+  }
+
+  form button:hover {
+    background: var(--color-4);
+    color: black;
+  }
+
+  .num-items {
+    color: black;
+    text-align: left;
+    margin-left: 7vw;
+    font-size: 3vh;
+  }
+
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  .todo-container {
+    display: flex;
+    margin: auto;
+    width: 80vw;
+    min-width: 30vw;
+    min-height: 40vh;
+    margin-top: 4vh;
+    padding: 2vw;
+  }
+
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+
+  .todo {
+    margin: 0.5rem;
+    background-color: white;
+    height: 6vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    border-radius: 4vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .todo-item {
+    flex: 1;
+    padding: 0rem 0.5rem;
+    color: black;
+    font-size: 2.2vh;
+    padding-left: 1.4vw;
+    line-height: 2vh;
+  }
+
+  .complete-btn,
+  .trash-btn {
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .complete-btn {
+    background: lightgrey;
+    height: 5vh;
+    width: 5vw;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    margin-left: 0.6vw;
+  }
+
+  .complete-btn:hover {
+    background: var(--color-4);
+    height: 5.2vh;
+    width: 6.3vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .trash-btn {
+    height: 5vh;
+    width: 5vw;
+    border-top-right-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    background: gray;
+    margin-right: 0.5vw;
+  }
+
+  .trash-btn:hover {
+    height: 5.2vh;
+    width: 6.3vw;
+    background: #a70202;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .addTxt {
+    font-size: 2.2vh;
+    color: white;
+    letter-spacing: 0.05rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: inline;
+  }
+
+  .addTxt:hover {
+    color: black;
+    display: inline;
+  }
+
+  .todo-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa-rectangle-xmark,
+  .fa-check,
+  .fa-plus {
+    pointer-events: none;
+    size: 2.2vh;
+    margin-right: 0vw;
+    margin-top: 0.5vh;
+  }
+
+  .fall {
+    opacity: 0; /* coz we want it to disappear */
+    animation: fall-animation 1s ease-in-out;
+  }
+
+  @keyframes fall-animation {
+    0% {
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-5px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5; /* coz we still want to be able to see what has been done incase of a restore */
+  }
+
+  select {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 12.6vw;
+    height: 6vh;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    font-size: 2.2vh;
+    border-radius: 4vw;
+    padding-left: 2vw;
+    background-color: black;
+    border: none;
+    margin-right: 1vw;
+  }
+
+  select:hover {
+    background-color: white;
+    color: black;
+  }
+
+  select option {
+    font-weight: 500;
+    border-radius: none;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 2vh;
+  }
+
+  /* this is the div */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: 300;
+  }
+
+  .select::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1.6vw;
+    padding-top: 1.2vh;
+    color: var(--color-2);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  :root {
+    --color-1: #035a89;
+    --color-2: #880000;
+    --color-3: #faf1d8;
+    --color-4: #3ef97c;
+    --color-5: #b48a32;
+    --color-6: #ead5a0;
+    --text: #faf5e9;
+    --white: #fff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+  }
+
+  .mainDiv {
+    background: linear-gradient(
+      150deg,
+      var(--color-4),
+      var(--color-3),
+      var(--color-6)
+    );
+    min-height: 100vh;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    color: var(--text);
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vh;
+  }
+
+  header {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    height: 25vh;
+    justify-content: space-between;
+    background-color: black;
+    background-image: url("images-20241130T222905Z-001/images/10711070.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 2%;
+    background-size: 40%;
+    background-origin: padding-box;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+
+  .todo-image {
+    display: flex;
+    min-width: 20vw;
+    margin-top: 6vh;
+    margin-left: 3.8vw;
+    border-radius: 4vw;
+  }
+
+  .logo-img {
+    height: 15vh;
+    min-width: 8vw;
+    margin-top: -2vh;
+  }
+
+  h1 {
+    color: white;
+    text-align: left;
+    font-size: 3vh;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    font-weight: 400;
+  }
+
+  .formDiv {
+    width: 90vw;
+    height: 10.9vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  form input {
+    border-radius: 4vw;
+  }
+
+  .todo-input {
+    height: 5vh;
+    width: 60vw;
+    color: black;
+    background-color: #55555531;
+    font-size: 2.4vh;
+    padding-left: 2vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1.7vh;
+    padding-top: 1.6vh;
+    border: none;
+    outline: none;
+  }
+
+  form button {
+    height: 6vh;
+    width: 16vw;
+    margin-left: -16.9vw;
+    color: var(--white);
+    font-weight: 500;
+    background: #a70202;
+    cursor: pointer;
+    border-radius: 4vw;
+    transition: all 0.3s ease-in-out;
+  }
+
+  form button:hover {
+    background: var(--color-4);
+    color: black;
+  }
+
+  .num-items {
+    color: black;
+    text-align: left;
+    margin-left: 7vw;
+    font-size: 2.5vh;
+  }
+
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  .todo-container {
+    display: flex;
+    margin: auto;
+    min-width: 30vw;
+    min-height: 40vh;
+    margin-top: 4vh;
+    padding: 2vw;
+  }
+
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+
+  .todo {
+    margin: 0.5rem;
+    background-color: white;
+    height: 6vh;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    border-radius: 4vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .todo-item {
+    flex: 1;
+    padding: 0rem 0.5rem;
+    color: black;
+    font-size: 2vh;
+    padding-left: 1.4vw;
+    line-height: 2vh;
+  }
+
+  .complete-btn,
+  .trash-btn {
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .complete-btn {
+    background: lightgrey;
+    height: 5vh;
+    width: 5vw;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    margin-left: 0.6vw;
+  }
+
+  .complete-btn:hover {
+    background: var(--color-4);
+    height: 5.2vh;
+    width: 6.3vw;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .trash-btn {
+    height: 5vh;
+    width: 5vw;
+    border-top-right-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    background: gray;
+    margin-right: 0.5vw;
+  }
+
+  .trash-btn:hover {
+    height: 5.2vh;
+    width: 6.3vw;
+    background: #a70202;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .addTxt {
+    font-size: 2.2vh;
+    color: white;
+    letter-spacing: 0.05rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: inline;
+  }
+
+  .addTxt:hover {
+    color: black;
+    display: inline;
+  }
+
+  .todo-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa-rectangle-xmark,
+  .fa-check,
+  .fa-plus {
+    pointer-events: none;
+    size: 2.2vh;
+    margin-right: 0vw;
+    margin-top: 0.5vh;
+  }
+
+  .fall {
+    opacity: 0; /* coz we want it to disappear */
+    animation: fall-animation 1s ease-in-out;
+  }
+
+  @keyframes fall-animation {
+    0% {
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-5px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5; /* coz we still want to be able to see what has been done incase of a restore */
+  }
+
+  select {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 12.6vw;
+    height: 6vh;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    font-size: 1.5vh;
+    border-radius: 4vw;
+    padding-left: 2vw;
+    background-color: black;
+    border: none;
+    margin-right: 1vw;
+  }
+
+  select:hover {
+    background-color: white;
+    color: black;
+  }
+
+  select option {
+    font-weight: 500;
+    border-radius: none;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vh;
+  }
+
+  /* this is the div */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: 300;
+  }
+
+  .select::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1.6vw;
+    padding-top: 1.2vh;
+    color: var(--color-2);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+}

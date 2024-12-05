@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d2339a278b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="todo-image">
+        <img
+          src="images-20241130T222905Z-001/images/10711070.png"
+          alt=""
+          class="logo-img"
+          width="auto"
+          height="auto"
+        />
+        <h1>TO-DO LIST</h1>
+      </div>
+    </header>
+
+    <div class="mainDiv">
+      <h1 class="num-items">Hi, you have</h1>
+
+      <div class="formDiv">
+        <form action="">
+          <input
+            type="text"
+            class="todo-input"
+            title="input"
+            placeholder="Type here"
+          />
+          <button class="todo-button" type="submit">
+            <i class="fa-solid fa-plus"> Add </i>
+          </button>
+
+          <!-- drop down button for filter w class="select"-->
+          <div class="select">
+            <select name="todos" class="filter-todo" title="Filter here">
+              <option value="all">All</option>
+              <option value="done">Done</option>
+              <option value="undone">Undone</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <!--
+          What we want to achieve w js
+          <div class="todo">
+          <li></li>
+          <button></button>
+          <button></button>
+        </div>
+      -->
+
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
