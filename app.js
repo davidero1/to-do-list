@@ -36,7 +36,7 @@ function addTodo(e) {
   todoDiv.appendChild(newTodo);
 
   // create button (check button)
-  const completeButton = document.createElement("button");
+  const completeButton = document.createElement("button"); // button
   completeButton.innerHTML = `<i class="fa-solid fa-check"></i>`;
   completeButton.classList.add("complete-btn");
   todoDiv.appendChild(completeButton);
