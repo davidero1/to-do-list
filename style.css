@@ -36,7 +36,8 @@ body {
   animation: color 12s ease-in-out infinite;
   color: var(--text);
   border-top-left-radius: 5vw;
-  border-top-right-radius: 5vh;
+  border-top-right-radius: 5vw;
+  border: 2px solid white;
 }
 
 header {
@@ -47,16 +48,6 @@ header {
   height: 25vh;
   justify-content: space-between;
   background-color: black;
-  background-image: url("images-20241130T222905Z-001/images/10711070.png");
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-position-x: 93%;
-  background-position-y: 2%;
-  background-size: 40%;
-  background-origin: padding-box;
-  z-index: 0;
-  object-fit: cover;
-  object-position: 100% 100%;
 }
 
 .todo-image {
@@ -300,9 +291,9 @@ select {
   color: white;
   font-family: "Poppins", sans-serif;
   outline: none;
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   width: 12.6vw;
   height: 6vh;
   cursor: pointer;
@@ -351,8 +342,6 @@ select option {
 }
 
 @media (max-width: 1024px) {
-  @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
   :root {
     --color-1: #035a89;
     --color-2: #880000;
@@ -389,7 +378,7 @@ select option {
     animation: color 12s ease-in-out infinite;
     color: var(--text);
     border-top-left-radius: 5vw;
-    border-top-right-radius: 5vh;
+    border-top-right-radius: 5vw;
   }
 
   header {
@@ -400,16 +389,6 @@ select option {
     height: 25vh;
     justify-content: space-between;
     background-color: black;
-    background-image: url("images-20241130T222905Z-001/images/10711070.png");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position-x: 93%;
-    background-position-y: 2%;
-    background-size: 40%;
-    background-origin: padding-box;
-    z-index: 0;
-    object-fit: cover;
-    object-position: 100% 100%;
   }
 
   .todo-image {
@@ -653,9 +632,9 @@ select option {
     color: white;
     font-family: "Poppins", sans-serif;
     outline: none;
-    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    appearance: none;
     width: 12.6vw;
     height: 6vh;
     cursor: pointer;
@@ -705,8 +684,6 @@ select option {
 }
 
 @media (max-width: 600px) {
-  @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
   :root {
     --color-1: #035a89;
     --color-2: #880000;
@@ -743,7 +720,7 @@ select option {
     animation: color 12s ease-in-out infinite;
     color: var(--text);
     border-top-left-radius: 5vw;
-    border-top-right-radius: 5vh;
+    border-top-right-radius: 5vw;
   }
 
   header {
@@ -754,16 +731,6 @@ select option {
     height: 25vh;
     justify-content: space-between;
     background-color: black;
-    background-image: url("images-20241130T222905Z-001/images/10711070.png");
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position-x: 93%;
-    background-position-y: 2%;
-    background-size: 40%;
-    background-origin: padding-box;
-    z-index: 0;
-    object-fit: cover;
-    object-position: 100% 100%;
   }
 
   .todo-image {
@@ -1007,9 +974,9 @@ select option {
     color: white;
     font-family: "Poppins", sans-serif;
     outline: none;
-    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    appearance: none;
     width: 12.6vw;
     height: 6vh;
     cursor: pointer;
