@@ -11,70 +11,119 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/d2339a278b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/d2339a278b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <div class="todo-image">
-        <img
-          src="images-20241130T222905Z-001/images/10711070.png"
-          alt=""
-          class="logo-img"
-          width="auto"
-          height="auto"
-        />
-        <h1>TO-DO LIST</h1>
+        <div class="head-div1">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+
+        <div class="head-div2">
+          <p class="head-para">The real fruition of life is <br>
+            the things we’ve said we wished</p>
+        </div>
+
+        <div class="head-div3">
+          <div class="todiv">
+            <h1 class="todiv-txt">TO</h1>
+          </div>
+
+          <div class="dodiv">
+            <h1 class="dodiv-txt">DO</h1>
+          </div>
+        </div>
+
+        <div class="head-div4">
+          <div class="line-box">
+            <p class="line"></p>
+          </div>
+
+          <div class="quote99box">
+            <i class="fa-solid fa-quote-right"></i>
+        </div>
+        </div>
+
+        <div class="head-div5">
+            <h3 class="woodrowtxt">WOODROW WILSON</h3>
+        </div>
       </div>
     </header>
 
-    <div class="mainDiv">
-      <h1 class="num-items">Hi, you have</h1>
+    <div class="mainDiv-outer">
+      <div class="mainDiv">
+          <div class="formDiv">
+            <form action="">
+              <input
+                type="text"
+                class="todo-input"
+                title="input"
+                placeholder="Type here"
+              />
+              <button class="todo-button" type="submit">
+                <i class="fa-solid fa-plus"> Add </i>
+              </button>
 
-      <div class="formDiv">
-        <form action="">
-          <input
-            type="text"
-            class="todo-input"
-            title="input"
-            placeholder="Type here"
-          />
-          <button class="todo-button" type="submit">
-            <i class="fa-solid fa-plus"> Add </i>
-          </button>
-
-          <!-- drop down button for filter w class="select"-->
-          <div class="select">
-            <select name="todos" class="filter-todo" title="Filter here">
-              <option value="all">All</option>
-              <option value="done">Done</option>
-              <option value="undone">Undone</option>
-            </select>
+              <!-- drop down button for filter w class="select"-->
+              <div class="select">
+                <select name="todos" class="filter-todo" title="Filter here">
+                  <option value="all">All</option>
+                  <option value="done">Done</option>
+                  <option value="undone">Undone</option>
+                </select>
+              </div>
+            </form>
           </div>
-        </form>
+
+          <!--
+              What we want to achieve w js
+              <div class="todo">
+              <li></li>
+              <button></button>
+              <button></button>
+            </div>
+          -->
+
+          <div class="todo-container">
+            <ul class="todo-list"></ul>
+          </div>
       </div>
 
-      <!--
-          What we want to achieve w js
-          <div class="todo">
-          <li></li>
-          <button></button>
-          <button></button>
-        </div>
-      -->
+      <div class="num">
+        <h1 class="num-items">Hi, you have</h1>
+      </div>
 
-      <div class="todo-container">
-        <ul class="todo-list"></ul>
+      <div class="logobox1">
+        <div class="logobox1a">
+        <img
+          src="images-20241130T222905Z-001/images/DAVID ēRO™ text white - DAVID.png"
+          class="logo1a"
+          width="auto"
+          height="auto"
+          alt="logo"
+        />
+        </div>
+        <div class="logobox1b">
+          <img
+            src="images-20241130T222905Z-001/images/DAVID ēRO™ text white - ēRO.png"
+            class="logo1b"
+            width="auto"
+            height="auto"
+            alt="logo"
+          />
+        </div>
       </div>
     </div>
 

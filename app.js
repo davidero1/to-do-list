@@ -120,11 +120,15 @@ function filterTodo(e) {
   });
 }
 
+// TASK 58
 // local storage & session storage
 
 // they're basically written the same way
 
-// syntax: localStorage.setItem("key", "value"); // .setItem is used to set
+// syntax:- localStorage.setItem("key", "value");
+// syntax:- sessionStorage.setItem("key", "value");
+
+// .setItem is used to set keys n values
 // whatever is passed into the bracket is a string
 // it can only accept strings
 // the key is written first, then the value
@@ -134,57 +138,53 @@ function filterTodo(e) {
 // "write some code" shows in the Application tab of the browser terminal
 // local storage always persists until it is cleared
 
-// localStorage.setItem("todoList", "Take a nap");
+// sessionStorage.setItem("todoList", "Take a nap");
 // session only lasts for that session, clears upon close
 
 // .clear is used to clear the storage
-// localStorage.clear("todo");
+// localStorage.clear();
 
 // localStorage.setItem("user", "Peter");
 
-// localStorage.clear("user"); // clear is used to clear the entire data
+// localStorage.clear("todo1", "todo2", "todo3"); // clear is used to clear the entire data
 
-// localStorage.setItem("user", "Ade");
+// localStorage.setItem("user", "David");
 // localStorage.setItem("user", "Swim");
-//  when the same key is used w different values, the most recent value will overide the earlier values
+//  when the same key is used w multiple different values,
+// the most recent value will overide the earlier values
 
 // we can have multiple values with a single key using stringify
 
-// retrieving data from the local storage
+// retrieving data from the local storage using .getItem
 
-/*
-const todo = localStorage.getItem("todo");
-console.log(todo);
-*/
+// const todo = localStorage.getItem("todo");
+// console.log(todo);
 
 // how to pass an array into a localStorage
 
-const todoItems = {
-  todo1: "write some code",
-  todo2: "play basketball",
-  todo3: "get milk",
-}; // change to [] and remove the todo1:-3
+// const todoItems = ["write some code", "play basketball", "get milk"]; // change to [] and remove the todo1:-3
 
-localStorage.clear(); // to clear the storage
+// localStorage.clear(); // to clear the storage
 
-localStorage.setItem("todo", todoItems);
+// localStorage.setItem("todo", todoItems);
 // when an array is passed into a local storage it changes it to a string
 
 // const retrieveItem = localStorage.getItem("todo");
-
 // console.log(retrieveItem); // even if it is retrived, it still shows as a string
 
 // the stringify and parse method is used to maintain the passed array
 
 // the stringify turns it to a string and the parse is sued to convert it to its original form as an array
 
-localStorage.setItem("todo", JSON.stringify(todoItems));
+// localStorage.setItem("todo", JSON.stringify(todoItems));
 // it appears as a string now
 
 // now lets retrieve w .parse
-const retrieveItem = JSON.parse(localStorage.getItem("todo"));
+// const retrieveItem = JSON.parse(localStorage.getItem("todo"));
 // console.log(retrieveItem, typeof retrieveItem);
 // this returns it as an array ['object'] (check line :173 on the console tab)
+
+// TASK 59 - Lesson 7
 
 // Add todos to the local storage
 saveLocalTodos(todoInput.value);
@@ -200,7 +200,7 @@ function saveLocalTodos(todo) {
   }
 
   todos.push(todo);
-  localStorage.setItem("todos", JSON.stringify(todos)); // this saves the todo to the local storage
+  localStorage.setItem("todos", JSON.stringify(todos)); // this saves the todo to the local storage as an array using stringify
 }
 
 // retrieving the todos from local storage
@@ -245,22 +245,27 @@ function getTodos() {
 function removeLocalTodo(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {
-    todos = {};
+    todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
 
-  const todoIndex = todo.children[0].innerText;
+  const todoIndex = todo.children[0].innerText; // this helps us access the text the user inputs and stored it in the variable
   todos.splice(todos.indexOf(todoIndex), 1); // w splice we can remove any element in any position from an array
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// example of splice
 // const numbers = [1,2,3,4,5,6,7,8,9];
 // numbers.splice(1, 3); the first value is the starting point, while the 2nd is the number of elements to be removed
 // splice method alters the original array
 
-// const numbers = ["code", "swim", "eat", "nap"];
-// numbers.splice(0, 3); // result will show only nap
-// console.log(numbers);
+const numbers = ["code", "swim", "eat", "nap"];
+numbers.splice(0, 3); // result will show only nap coz it starts w 0(code) and 3 values are removed
+console.log(numbers);
 
-// write up on string methods, array methods: map, filter, reduce, sort, find, for each
+// ctrl+shift+l to select all the same text within the code
+// use it to change the local storage to session storage
+
+// repeat
+// read string, array methods: map, filter, reduce, sort, find, etc
