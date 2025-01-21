@@ -364,11 +364,6 @@ form button:hover {
   justify-content: center;
 }
 
-.fa-plus {
-  font-family: "Roboto Mono", serif;
-  font-weight: 500;
-}
-
 .fa-rectangle-xmark,
 .fa-check,
 .fa-plus {
@@ -644,8 +639,8 @@ header {
   position: absolute;
   height: 9vh;
   width: 12.5vw;
-  margin-left: 26vw;
-  margin-top: 6vh;
+  margin-left: 27vw;
+  margin-top: 5vh;
 }
 
 .fa-quote-right {
@@ -881,11 +876,6 @@ form button:hover {
   justify-content: center;
 }
 
-.fa-plus {
-  font-family: "Roboto Mono", serif;
-  font-weight: 500;
-}
-
 .fa-rectangle-xmark,
 .fa-check,
 .fa-plus {
@@ -1000,7 +990,7 @@ select option {
 
 .logobox1b {
   display: block;
-  margin-top: -2vh;
+  margin-top: -1.2vh;
 }
 
 .logo1a {
@@ -1049,7 +1039,7 @@ select option {
   }
   
   header {
-    height: 12vh;
+    height: 10vh;
     padding: 2vh;
     position: relative;
   }
@@ -1163,8 +1153,8 @@ select option {
     position: absolute;
     height: 8.8vh;
     width: 12.5vw;
-    margin-left: 8vw;
-    margin-top: -1vh;
+    margin-left: 10vw;
+    margin-top: -5vh;
   }
   
   .fa-quote-right {
@@ -1355,7 +1345,7 @@ select option {
     border-top-left-radius: 4vw;
     border-bottom-left-radius: 4vw;
     margin-left: 0.6vw;
-    padding-bottom: 3px;
+    padding-bottom: 10px;
   }
   
   .complete-btn:hover {
@@ -1372,7 +1362,7 @@ select option {
     border-bottom-right-radius: 4vw;
     background: gray;
     margin-right: 0.5vw;
-    padding-bottom: 3px;
+    padding-bottom: 10px;
   }
   
   .trash-btn:hover {
@@ -1401,16 +1391,11 @@ select option {
     justify-content: center;
   }
   
-  .fa-plus {
-    font-family: "Roboto Mono", serif;
-    font-weight: 500;
-  }
-  
   .fa-rectangle-xmark,
   .fa-check,
   .fa-plus {
     pointer-events: none;
-    size: 2vh;
+    size: 1.5vh;
     margin-right: 0vw;
   }
   
@@ -1507,7 +1492,7 @@ select option {
     flex-direction: column;
     position: absolute;
     margin-left: 72vw;
-    margin-top: 75vh;
+    margin-top: 70vh;
   }
   
   .logobox1a {
