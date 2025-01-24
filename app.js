@@ -150,6 +150,7 @@ function filterTodo(e) {
 
 // localStorage.setItem("user", "David");
 // localStorage.setItem("user", "Swim");
+// localStorage.setItem("user", "Greg");
 //  when the same key is used w multiple different values,
 // the most recent value will overide the earlier values
 
@@ -162,7 +163,9 @@ function filterTodo(e) {
 
 // how to pass an array into a localStorage
 
-// const todoItems = ["write some code", "play basketball", "get milk"]; // change to [] and remove the todo1:-3
+
+// const todoItems = ["write some code", "play basketball", "get milk"];
+// console.log(todoItems); // change to [] and remove the todo1:-3
 
 // localStorage.clear(); // to clear the storage
 
@@ -172,9 +175,10 @@ function filterTodo(e) {
 // const retrieveItem = localStorage.getItem("todo");
 // console.log(retrieveItem); // even if it is retrived, it still shows as a string
 
+
 // the stringify and parse method is used to maintain the passed array
 
-// the stringify turns it to a string and the parse is sued to convert it to its original form as an array
+// the stringify turns it to a string and the .parse is sued to convert it to its original form as an array
 
 // localStorage.setItem("todo", JSON.stringify(todoItems));
 // it appears as a string now
@@ -185,6 +189,8 @@ function filterTodo(e) {
 // this returns it as an array ['object'] (check line :173 on the console tab)
 
 // TASK 59 - Lesson 7
+
+
 
 // Add todos to the local storage
 saveLocalTodos(todoInput.value);
@@ -257,12 +263,14 @@ function removeLocalTodo(todo) {
 
 // example of splice
 // const numbers = [1,2,3,4,5,6,7,8,9];
-// numbers.splice(1, 3); the first value is the starting point, while the 2nd is the number of elements to be removed
+// numbers.splice(1, 3); // the first value is the starting point, while the 2nd is the number of elements to be removed
 // splice method alters the original array
 
-const numbers = ["code", "swim", "eat", "nap"];
-numbers.splice(0, 3); // result will show only nap coz it starts w 0(code) and 3 values are removed
-console.log(numbers);
+// const numbers = ["code", "swim", "eat", "nap"];
+// numbers.splice(0, 2); // result will show only nap coz it starts w 0(code) and 3 values are removed
+// console.log(numbers);
+
+
 
 // ctrl+shift+l to select all the same text within the code
 // use it to change the local storage to session storage

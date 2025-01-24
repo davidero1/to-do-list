@@ -77,6 +77,22 @@ header {
   margin-top: -19vh;
 }
 
+.myani {
+  animation-name: myani;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes myani {
+  0% {color: #e9d9cb;}
+  50% {color: #ead5a0;}
+  75% {color: #d6a55f;}
+  100% {color: #898575;}
+} 
+
 .todiv {
   width: 7vw;
   height: 8vh;
@@ -507,7 +523,7 @@ select option {
   }
 
   html,
-body {
+  body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Space Grotesk", "Roboto Mono", "Courier Prime", Cascadia Code, sans-serif;
