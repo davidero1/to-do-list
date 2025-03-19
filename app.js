@@ -7,6 +7,7 @@ const filterOption = document.querySelector(".filter-todo"); // for the filter
 const items = todoList.children;
 const numOfItems = document.querySelector(".num-items");
 
+
 // Add event listeners
 todoButton.addEventListener("click", addTodo);
 
@@ -17,7 +18,7 @@ todoList.addEventListener("click", plusTrash); // find the function in line 66
 filterOption.addEventListener("click", filterTodo);
 
 // add event listener to the entire documnt
-document.addEventListener("DOMContentLoaded", getTodos); // the function is written in line 202
+document.addEventListener("DOMContentLoaded", getTodos); // the function is written in line 214
 
 // Functions
 

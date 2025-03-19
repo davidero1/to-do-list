@@ -1137,6 +1137,7 @@ select option {
     height: 10vh;
     padding: 2vh;
     position: relative;
+    width: 80vw;
   }
   
   .head-div1 {
@@ -1284,26 +1285,30 @@ select option {
   .mainDiv {
     background: linear-gradient(
       150deg,
-      white,
+      rgba(255, 255, 255, 0.106),
       var(--color-3),
       var(--color-6),
       black
     );
     min-height: 100vh;
-    width: 53vw;
+    width: 77vw;
     padding-top: 5vh;
     animation: color 12s ease-in-out infinite;
     border-top-left-radius: 0vw;
     border-top-right-radius: 0vw;
     border-top-right-radius: 1.5vw;
-    box-shadow: 0px 20px 29px black;
+    box-shadow: 0px 20px 50px black;
   }
   
   .formDiv {
-    height: 6.6vh;
-    width: 90vw;
+    height: 6vh;
+    width: 96vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    margin: auto;
+    margin-top: -15vh;
+    margin-left: 1vw;
   }
   
   form {
@@ -1316,7 +1321,7 @@ select option {
   .todo-input {
     font-family: "Roboto Mono", serif;
     height: 2.6vh;
-    width: 36vw;
+    width: 70vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.548);
     padding-left: 3vw;
@@ -1334,7 +1339,7 @@ select option {
   
   .todo-input:focus {
     height: 3vh;
-    width: 36vw;
+    width: 80vw;
     align-self: self-start;
     outline: none;
     font-family: "Roboto Mono", serif;
@@ -1373,29 +1378,31 @@ select option {
   }
   
   .num {
-    width: 20vw;
-    height: 96vh;
-    margin: auto;
-    margin-top: 6vh;
+    width: 19vw;
+    height: 105vh;
+    margin-top: 0vh;
     margin-left: 0vw;
-    padding-top: 8vh;
-    padding: 3vw;
     background: linear-gradient(
-      180deg,
-      #d6a55f,
+      rgba(0, 0, 0, 0.58),
       black 
     );
-    border-top-right-radius: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 20vw;
+    border-top-right-radius: 20vw;
   }
   
   .num-items {
     text-align: center;
     font-size: 2vh;
     font-family: "Roboto Mono", serif;
-    font-weight: 300;
+    font-weight: 400;
     color: white;
     line-height: 3vh;
     letter-spacing: 0.03rem;
+    rotate: 0deg;
+    margin-top: 40vh;
   }
   
   @keyframes color {
@@ -1436,6 +1443,7 @@ select option {
     transition: all 0.5s ease;
     border-radius: 4vw;
     box-shadow: 1px 2px 5px black;
+    z-index: 50;
   }
   
   .todo-item {
@@ -1453,6 +1461,7 @@ select option {
     font-size: 1.3vh;
     color: #fff;
     cursor: pointer;
+    z-index: 80;
     transition: all 0.3s ease-in-out;
   }
   
@@ -1616,15 +1625,15 @@ select option {
   .logobox1 {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin-left: 80vw;
-    margin-top: 66vh;
+    margin-top: 60vh;
+    padding-top: 3vh;
+    height: 8vh;
   }
   
   .logobox1a {
     display: inline-block;
-    padding-left: 1vw;
-    margin-left: -0.7vw;
+    padding-left: 0vw;
+    margin-left: 0vw;
   }
   
   .logobox1b {
