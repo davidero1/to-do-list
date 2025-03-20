@@ -1135,27 +1135,26 @@ select option {
   
   header {
     height: 10vh;
-    padding: 2vh;
     position: relative;
     width: 80vw;
   }
   
   .head-div1 {
-    height: 4vh;
+    height: 8vh;
     width: 8vw;
     margin-left: -1vw;
   }
   
   .fa-quote-left {
     color: #880000;
-    font-size: 4vh;
+    font-size: 3vh;
   }
   
   .head-div2 {
     width: 45vw;
     height: 4vh;
     margin-left: 17vw;
-    margin-top: 3vh;
+    margin-top: 0vh;
   }
   
   .head-para {
@@ -1238,6 +1237,7 @@ select option {
     width: 5vw;
     height: 3vh;
     margin-top: 2vh;
+    display: none;
   }
   
   .line {
@@ -1247,15 +1247,14 @@ select option {
   
   .quote99box {
     position: absolute;
-    height: 8.8vh;
+    height: 10vh;
     width: 12.5vw;
-    margin-left: 10vw;
-    margin-top: -0vh;
+    margin-left: 5vw;
   }
   
   .fa-quote-right {
     color: #be0032;
-    font-size: 7vh;
+    font-size: 6vh;
   }
   
   .head-div5 {
@@ -1296,19 +1295,19 @@ select option {
     animation: color 12s ease-in-out infinite;
     border-top-left-radius: 0vw;
     border-top-right-radius: 0vw;
-    border-top-right-radius: 1.5vw;
     box-shadow: 0px 20px 50px black;
+    border: 1px solid black;
   }
   
   .formDiv {
     height: 6vh;
-    width: 96vw;
+    width: 93vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin: auto;
     margin-top: -15vh;
-    margin-left: 1vw;
+    margin-left: 2.5vw;
   }
   
   form {
@@ -1321,29 +1320,30 @@ select option {
   .todo-input {
     font-family: "Roboto Mono", serif;
     height: 2.6vh;
-    width: 70vw;
+    width: 68vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.548);
     padding-left: 3vw;
     padding-bottom: 1vh;
     margin-top: 0vh;
     margin-left: 0vw;
-    /*  border: 1px solid #ffffff8a; */
-    font-size: 1.5vh;
+    border: 1px solid #ffffff53;
+    box-shadow: 2px 2px 10px black;
   }
   
   .todo-input::placeholder {
-    font-size: 1vh;
+    font-size: 1.2vh;
     color: #aeaeae;
   }
   
   .todo-input:focus {
-    height: 3vh;
-    width: 80vw;
-    align-self: self-start;
+    height: 2.7vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
     outline: none;
     font-family: "Roboto Mono", serif;
-    margin-top: -0.1vh;
+    margin-top: 0.5vh;
     border-radius: 5vw;
     border: 2px solid white;
     box-shadow: 2px 2px 10px #880000;
@@ -1360,21 +1360,23 @@ select option {
   }
   
   form button {
-    height: 3vh;
-    width: 9vw;
+    height: 3.5vh;
+    width: 10vw;
     color: white;
-    margin-left: 7vw; 
-    color: var(--white);
+    margin-left: -12vw;
     font-weight: 400;
     background: var(--color-2);
     cursor:pointer; 
+    display: flex;
+    align-items: center;
+    border-radius: 40%;
     transition: all 0.3s ease-in-out;
   }
   
   form button:hover {
     background: #880000;
     color: white;
-    margin-top: 0vh;
+    margin-top: -1vh;
   }
   
   .num {
@@ -1402,7 +1404,7 @@ select option {
     line-height: 3vh;
     letter-spacing: 0.03rem;
     rotate: 0deg;
-    margin-top: 40vh;
+    margin-top: 5vh;
   }
   
   @keyframes color {
@@ -1592,12 +1594,13 @@ select option {
   }
   
   .filter-todo {
-    height: 2.5vh;               
-    width: 12vw;
-    font-size: 1vh;
+    height: 4vh;             
+    width: 15vw;
+    font-size: 1.3vh;
     margin-left: 2vw;
-    display: inline-block;
-    position: absolute;
+    padding-bottom: 1vh;
+    color: black;
+    background-color: white;
   }
   
   /* this is the div */
@@ -1625,7 +1628,7 @@ select option {
   .logobox1 {
     display: flex;
     flex-direction: column;
-    margin-top: 60vh;
+    margin-top: 38vh;
     padding-top: 3vh;
     height: 8vh;
   }
